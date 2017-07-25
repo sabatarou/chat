@@ -1,5 +1,31 @@
-#site-box{}
-#a-box{}
-#b-box{}
-#c-box{}
-#d-box{}
+#site-box
+{
+width:752px;
+border:1px solid #FF9900;
+text-align: center;
+margin: auto;
+}
+#a-box
+{
+  float:center;
+  height: auto;
+  width: :752px;
+border-bottom: 1px solid #FF9900;
+background-image: url('img/header.gif');
+}
+#b-box
+{
+float:left;
+width:500px;
+}
+#c-box
+{
+float:right;
+width:250px;
+}
+#d-box
+{
+  clear:both;
+  width:750px;
+  background-color:#FFFF99;
+}
