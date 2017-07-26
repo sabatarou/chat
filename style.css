@@ -1,35 +1,46 @@
 :root
+  /*変数*/
 {
+  /*横幅*/
   --sitewidth:752px;
   --width:750px;
-  --mainheighit:463px;
   --mainwitdh:464px;
   --subwitdh:286px;
+  /*縦幅*/
+  --mainheighit:463px;
+  --header_height:100px;
+  --footer_hright:100px;
+  /*枠*/
   --boder_color:#FF9900;
+  --border_size:1px;
+  /*フォント*/
+  --font_size:18px;
   --header_font_size:2.0em;
+  --fotter_background-color:#FFFF99;
 }
 #site-box
 {
-width:var(--sitewidth);
-border:1px solid var(--boder_color);
-text-align: center;
-margin: auto;
-font-size: 18px;
+  width: var(--sitewidth);
+  border: var(--border_size) solid var(--boder_color);
+  text-align: center;
+  margin: auto;
+  font-size: var(--font_size);
 }
 #header
 {
-  height: 100px;
-  width: :var(--width);
-  line-height: 100px;
-  border-bottom: 1px solid var(--boder_color);
-  font-size: var(--header_font_size);
+  height: var(--header_height);
+  width:  var(--width);
+  border-bottom: var(--border_size) solid var(--boder_color);
+  /*--heder_heightを代入して縦中央ぞろえにしておく*/
+  line-height: var(--header_height);
+  font-size:   var(--header_font_size);
   background-image: url('img/header.gif');
 }
 #main
 {
   height: var(--mainheighit);
-  width:var(--mainwitdh);
-    border-right: 1px solid var(--boder_color);
+  width:  var(--mainwitdh);
+  border-right: var(--border_size) solid var(--boder_color);
   float:left;
 }
 #sub
@@ -41,6 +52,7 @@ font-size: 18px;
 #footer
 {
   clear:both;
-  width:var(--width);
-  background-color:#FFFF99;
+  height: var(--footerheight);
+  width:  var(--width);
+  background-color:var(--fotter_background-color);
 }
