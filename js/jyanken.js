@@ -1,0 +1,10 @@
+$(function()
+{
+	$('#time').click
+  (function()
+   {
+	  jQuery('#time').text("okokokok");
+	 }
+  );
+ }
+);
