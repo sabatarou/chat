@@ -1,0 +1,17 @@
+@font-face
+	{
+	font-family:'Cyber';
+	src:url('Cybercrime2004.ttf') format('truetype');
+  }
+.cyber_title
+	{
+		font-family:Cyber;
+		font-size:54px;
+		text-shadow: 0 0 10px #fff,0 0 10px #fff;
+
+	}
+	.cyber
+		{
+			font-family:Cyber;
+			font-size: 18px;
+		}

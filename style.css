@@ -1,58 +1,53 @@
 :root
-  /*変数*/
+/*変数*/
 {
   /*横幅*/
+  --width:752px;
   --sitewidth:752px;
-  --width:750px;
   --mainwitdh:464px;
   --subwitdh:286px;
   /*縦幅*/
-  --mainheighit:463px;
-  --header_height:100px;
-  --footer_hright:100px;
+  --mainheight:463px;
+  --title_heder_height:100px;
+  --title_header:100px;
   /*枠*/
-  --boder_color:#FF9900;
-  --border_size:1px;
-  /*フォント*/
-  --font_size:18px;
-  --header_font_size:2.0em;
-  --fotter_background-color:#FFFF99;
+  --boder_size:1px;
+  --boder_color:#4169e1;
+  /*背景*/
+  --box_color:#000080;
+
 }
-#site-box
+#box
 {
-  width: var(--sitewidth);
-  border: var(--border_size) solid var(--boder_color);
-  text-align: center;
-  margin: auto;
-  font-size: var(--font_size);
+width:var(--sitewidth);
+background:var(--box_color);
+border:var(--boder_size)  solid var(--boder_color);
+text-align: center;
+margin: auto;
 }
-#header
+#title_header
 {
-  height: var(--header_height);
-  width:  var(--width);
-  border-bottom: var(--border_size) solid var(--boder_color);
-  /*--heder_heightを代入して縦中央ぞろえにしておく*/
-  line-height: var(--header_height);
-  font-size:   var(--header_font_size);
-  background-image: url('img/header.gif');
+  height:	var(--title_header);
+  width: var(--width);
+  line-height: var(--title_header);
+  border-bottom: var(--boder_size) solid var(--boder_color);
 }
 #main
 {
-  height: var(--mainheighit);
-  width:  var(--mainwitdh);
-  border-right: var(--border_size) solid var(--boder_color);
+  height: var(--mainheight);
+  width:var(--mainwitdh);
+    border-right: var(--boder_size)  solid var(--boder_color);
   float:left;
 }
 #sub
 {
-  height: var(--mainheighit);
+  height: var(--mainheight);
   width:  var(--subwitdh);
   float:right;
 }
 #footer
 {
   clear:both;
-  height: var(--footerheight);
-  width:  var(--width);
-  background-color:var(--fotter_background-color);
+  background-color:var(--boder_color);
+  width:var(--width);
 }
