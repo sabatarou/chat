@@ -3,51 +3,59 @@
 {
   /*横幅*/
   --width:752px;
-  --sitewidth:752px;
-  --mainwitdh:464px;
-  --subwitdh:286px;
+  --site_width:752px;
+  --main_box_witdh:464px;
+  --sub_box_witdh:286px;
   /*縦幅*/
-  --mainheight:463px;
-  --title_heder_height:100px;
+  --main_box_height:463px;
   --title_header:100px;
   /*枠*/
   --boder_size:1px;
   --boder_color:#4169e1;
   /*背景*/
   --box_color:#000080;
-
+  /*フッター*/
+  --footer_color:#4169e1;
 }
 #box
 {
-width:var(--sitewidth);
+width:var(--site_width);
 background:var(--box_color);
 border:var(--boder_size)  solid var(--boder_color);
 text-align: center;
 margin: auto;
 }
-#title_header
+#header
 {
   height:	var(--title_header);
   width: var(--width);
   line-height: var(--title_header);
   border-bottom: var(--boder_size) solid var(--boder_color);
 }
+#main_box
+{
+  height: var(--main_box_height);
+  width:var(--main_box_witdh);
+  border-right: var(--boder_size)  solid var(--boder_color);
+  float:left;
+}
 #main
 {
-  height: var(--mainheight);
-  width:var(--mainwitdh);
-    border-right: var(--boder_size)  solid var(--boder_color);
-  float:left;
+  
+}
+#sub_box
+{
+  height: var(--main_box_height);
+  width:  var(--sub_box_witdh);
+  float:right;
 }
 #sub
 {
-  height: var(--mainheight);
-  width:  var(--subwitdh);
-  float:right;
+
 }
 #footer
 {
   clear:both;
-  background-color:var(--boder_color);
+  background-color:var(--footer_color);
   width:var(--width);
 }

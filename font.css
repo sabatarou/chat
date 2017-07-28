@@ -1,17 +1,29 @@
+:root
+/*変数*/
+  {
+		/*フォント*/
+		--font_size:18px;
+		--title_font_size:54px;
+    --font_color:#ffffff;
+		/*影*/
+		--shadow_color:#fff;
+		--shadow_size:12px;
+  }
 @font-face
 	{
-	font-family:'Cyber';
-	src:url('Cybercrime2004.ttf') format('truetype');
+		font-family:'Cyber';
+		src:url('Cybercrime2004.ttf') format('truetype');
   }
 .cyber_title
 	{
 		font-family:Cyber;
-		font-size:54px;
-		text-shadow: 0 0 10px #fff,0 0 10px #fff;
-
+		font-size:var(--title_font_size);
+		text-shadow: 0 0 var(--shadow_size) var(--shadow_color);
+    color:var(--font_color);
 	}
-	.cyber
-		{
-			font-family:Cyber;
-			font-size: 18px;
-		}
+.cyber
+	{
+		font-family:Cyber;
+		font-size: var(--font_size);
+    color:var(--font_color);
+	}

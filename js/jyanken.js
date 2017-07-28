@@ -1,22 +1,25 @@
-const start_time=9999;
-let now_time=start_time;
+let now_time=9999;
 function countup()
-  {
+{
 		if(now_time>0)
 		{
 			now_time--;
-			if()
+			if(parseInt(now_time/10)%10==0)
 			{
-		    jQuery( '#time' ) .text(parseInt(now_time/100)+":"+0+(now_time-(parseInt(now_time/100)*100)));
+		    jQuery( '.time' ) .text(parseInt(now_time/100)+":"+0+(now_time-(parseInt(now_time/100)*100)));
 			}
 			else
 			{
-	      jQuery( '#time' ) .text(parseInt(now_time/100)+":"+(now_time-(parseInt(now_time/100)*100)));
+	      jQuery( '.time' ) .text(parseInt(now_time/100)+":"+(now_time-(parseInt(now_time/100)*100)));
 			}
 	  }
+    $('.time').css('font-size','50px');
+
+			$('.time').css('font-color','red');
+		
   }
-function time()
+function timer()
 {
-		setInterval("countup(now_time)", 10);
+		setInterval("countup('font_size')", 10);
 }
-time();
+timer();
