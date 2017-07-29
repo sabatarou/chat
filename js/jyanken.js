@@ -16,7 +16,7 @@ function countup()
     $('.time').css('font-size','50px');
 
 			$('.time').css('font-color','red');
-		
+
   }
 function timer()
 {
