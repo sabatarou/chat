@@ -1,23 +1,29 @@
 <!doctype HTML>
 <head>
-<title>Rock Paper Scissors</title>
+<title> Chat</title>
 <link rel="stylesheet" type="text/css" href="style.css"/>
 <link rel="stylesheet" type="text/css" href="font.css"/>
 <link rel="stylesheet" type="text/css" href="background.css"/>
 <script type="text/javascript"src="js/jquery-3.2.1.min.js"></script>
-<script type="text/javascript"src="js/clock.js"></script>
-<script type="text/javascript" src="http://ntp-a1.nict.go.jp/cgi-bin/jsont"></script>
+<script type="text/javascript" src="js/jyanken.js"/></script>
+</script>
 </head>
 <body>
 <div id="box">
 <div class="cyber_title" id="header">
-  Cyber Clock
+chat
 </div>
 <div class="cyber" id="main_box">
-<div class="time"></div>
+  <div class=time></div>
 </div>
 <div class="cyber" id="sub_box">
-  Map
+  MENBER
+</div>
+<div class="cyber" id="input_box">
+<form method="post" action="chat.php">
+  <input type="text" name="chat_text"size="30" maxlength="30" value="">
+  <input type="submit" value="submit">
+</form>
 </div>
 <div class="cyber" id="footer">
   copyright (c) saba All right reserved

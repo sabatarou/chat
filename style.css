@@ -8,6 +8,7 @@
   --sub_box_witdh:286px;
   /*縦幅*/
   --main_box_height:463px;
+  --input_box_height:50px;
   --title_header:100px;
   /*枠*/
   --boder_size:1px;
@@ -39,19 +40,21 @@ margin: auto;
   border-right: var(--boder_size)  solid var(--boder_color);
   float:left;
 }
-#main
-{
-  
-}
+
 #sub_box
 {
   height: var(--main_box_height);
   width:  var(--sub_box_witdh);
   float:right;
 }
-#sub
+#input_box
 {
-
+  height:var(--input_box_height);
+  width:var(--main_box_witdh);
+  line-height: var(--input_box_height);
+  border-right: var(--boder_size)  solid var(--boder_color);
+  border-top: var(--boder_size)  solid var(--boder_color);
+  float:left;
 }
 #footer
 {
