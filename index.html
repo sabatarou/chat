@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="background.css"/>
 <script type="text/javascript"src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/jyanken.js"/></script>
+<meta charset="utf-8">
 </script>
 </head>
 <body>
@@ -14,15 +15,17 @@
 chat
 </div>
 <div class="cyber" id="main_box">
-  <div class=time></div>
+  <form method="post" action="log.php">
+    <input type="submit" value="チャットをみる">
+  </form>
 </div>
 <div class="cyber" id="sub_box">
-  MENBER
+MENBER
 </div>
 <div class="cyber" id="input_box">
 <form method="post" action="chat.php">
   <input type="text" name="chat_text"size="30" maxlength="30" value="">
-  <input type="submit" value="submit">
+  <input type="submit" value="チャットを送る">
 </form>
 </div>
 <div class="cyber" id="footer">
