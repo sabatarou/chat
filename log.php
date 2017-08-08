@@ -13,7 +13,7 @@
     exit($info[2]);
   }
   //最新の5件を表示
-  $stmt=$pdo->query('SELECT*FROM chat WHERE id>(SELECT MAX(id) FROM chat)-5');
+  $stmt=$pdo->query('SELECT*FROM chat WHERE id>(SELECT MAX(id) FROM chat)-10');
   if(!$stmt)
   {
     $info =$pdo->errorInfo();
@@ -21,7 +21,7 @@
   }
   while($data=$stmt->fetch(PDO::FETCH_ASSOC))
   {
-    echo $data['log'].$data['date'];
+    echo $data['log']."<br>".$data['date']."<br>";
   }
   $pdo =null;
   ?>

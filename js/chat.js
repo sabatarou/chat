@@ -1,4 +1,11 @@
-$.get("log.php",function(data)
-{
-  $('.chat').text(data);
-});
+$.ajax(
+  {
+  type:"POST",
+  url:"log.php",
+  dataType:"html",
+  success:function(msg)
+  {
+    $('.chat').html(msg);
+  }
+}
+);
