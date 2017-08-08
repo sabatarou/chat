@@ -2,7 +2,7 @@
 $chat_log=$_POST["chat_text"];
 try
 {
-$pdo=new PDO('mysql:dbname=chat;host=127.0.0.1','root','');
+$pdo=new PDO('mysql:dbname=chat;host=127.0.0.1','root','nisiiisao');
 }catch(PDOExepetion $e)
 {
   exit('データベースに接続できませんでした'.$e->getMessage());
@@ -20,5 +20,5 @@ SQL;
 $stmt=$pdo->prepare($sql);
 $stmt->bindValue(1,$chat_log,PDO::PARAM_STR);
 $stmt->execute();
-header('Location:http://13.112.160.103/');
+header('Location:http://localhost/chat/chat.html');
 ?>

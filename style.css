@@ -1,4 +1,4 @@
-:root
+﻿:root
 /*変数*/
 {
   /*横幅*/
@@ -6,10 +6,12 @@
   --site_width:752px;
   --main_box_witdh:464px;
   --sub_box_witdh:286px;
+  --menu_logo_width:186.5px;
   /*縦幅*/
   --main_box_height:463px;
   --input_box_height:50px;
-  --title_header:100px;
+  --menu_height:50px;
+  --header_height:100px;
   /*枠*/
   --boder_size:1px;
   --boder_color:#4169e1;
@@ -28,10 +30,26 @@ margin: auto;
 }
 #header
 {
-  height:	var(--title_header);
+  height:	var(--header_height);
   width: var(--width);
-  line-height: var(--title_header);
+  line-height: var(--header_height);
   border-bottom: var(--boder_size) solid var(--boder_color);
+}
+#menu_ber
+{
+height:var(--menu_height);
+width:var(--width);
+border-right: var(--boder_size) solid var(--boder_color);
+border-bottom: var(--boder_size) solid var(--boder_color);
+
+}
+#menu_link
+{
+line-height:var(--menu_height);
+height:var(--menu_height);
+width:var(--menu_logo_width);
+border-right: var(--boder_size) solid var(--boder_color);
+float:left;
 }
 #main_box
 {
