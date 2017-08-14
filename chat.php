@@ -2,7 +2,7 @@
 $chat_log=$_POST["chat_text"];
 try
 {
-$pdo=new PDO('mysql:dbname=chat;host=127.0.0.1','root','nisiiisao');
+$pdo=new PDO('mysql:dbname=chat;host=127.0.0.1','root','pass');
 }catch(PDOExepetion $e)
 {
   exit('データベースに接続できませんでした'.$e->getMessage());
