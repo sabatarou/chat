@@ -27,3 +27,8 @@
 		font-size: var(--font_size);
     color:var(--font_color);
 	}
+.chat_log
+  {
+    font-size:var(--font_size);
+    color:var(--font_color);
+  }
