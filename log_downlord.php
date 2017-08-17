@@ -28,7 +28,7 @@ if(isset($_POST["dlbtn"]))
 }
 $pdo=null;
 //ファイル出力
-$filename="file.txt";
+$filename=date('Y').".txt";
 header('Content-Type:txet/plain');
 header('Content-Disposition:attachment; filename='.$filename);
 echo mb_convert_encoding($str,"SJIS","UTF-8");
