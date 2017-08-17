@@ -33,13 +33,14 @@ CHAT
   <div class="chat"></div>
 </div>
 <div class="cyber" id="sub_box">
-UnderConstruction
+  <form action="log_downlord.php" method="post">
+    <input type="submit" name="dlbtn" value="ログのダウンロード" />
+  </form>
 </div>
 <div id="input_box">
 <form method="post" action="chat.php">
   <input type="text" name="chat_text"size="25" maxlength="25" value="">
   <input type="submit" value="チャットを送る">
-  <a id="download" href="#" download="test.html" onclick="log_download()">ダウンロード</a>
 </form>
 </div>
 <div class="cyber" id="footer">

@@ -16,7 +16,7 @@ $(document).ready
 (
 function()
 {
-$('input:visible').eq(0).focus();
+$('input:visible').eq(1).focus();
 }
 );
 function log_download()

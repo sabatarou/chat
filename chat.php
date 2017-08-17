@@ -20,5 +20,5 @@ SQL;
 $stmt=$pdo->prepare($sql);
 $stmt->bindValue(1,$chat_log,PDO::PARAM_STR);
 $stmt->execute();
-header('Location:http://13.112.160.103/chat.html');
+header('Location:http://localhost/chat/chat.html');
 ?>

@@ -12,7 +12,7 @@
     $info=$pdo->errorInfo();
     exit($info[2]);
   }
-  //最新の5件を表示
+  //最新の8件を表示
   $stmt=$pdo->query('SELECT*FROM chat WHERE id>(SELECT MAX(id) FROM chat)-8');
   if(!$stmt)
   {
@@ -21,8 +21,7 @@
   }
   while($data=$stmt->fetch(PDO::FETCH_ASSOC))
   {
-    echo $data['log']."<br>".$data['date']."<br>";
+    echo $data['id']."---".$data['date']."<br>".$data['log']."<br>";
   }
   $pdo =null;
-  
   ?>
